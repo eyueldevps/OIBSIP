@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To-Do App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>Today's list</h1>
+      <p>Add a task, tick it off when it's done.</p>
+    </header>
+
+    <form id="task-form" class="task-form" novalidate>
+      <label for="task-input" class="visually-hidden">New task</label>
+      <input id="task-input" type="text" placeholder="What needs doing?" maxlength="120" autocomplete="off">
+      <button type="submit" class="btn btn--primary">Add Task</button>
+    </form>
+    <p id="form-error" class="form-error" role="alert"></p>
+
+    <section class="panel" aria-labelledby="pending-title">
+      <div class="panel__head">
+        <h2 id="pending-title">Pending Tasks</h2>
+        <span id="pending-count" class="count">0 pending</span>
+      </div>
+      <ul id="pending-list" class="task-list"></ul>
+    </section>
+
+    <section class="panel panel--done" aria-labelledby="completed-title">
+      <div class="panel__head">
+        <h2 id="completed-title">Completed Tasks</h2>
+        <span id="completed-count" class="count">0 completed</span>
+      </div>
+      <ul id="completed-list" class="task-list"></ul>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
