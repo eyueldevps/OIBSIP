@@ -1,0 +1,139 @@
+:root {
+  --red: #b3141f;
+  --red-dark: #7d0c14;
+  --green: #0b4d2e;
+  --green-dark: #07351f;
+  --gold: #f2c230;
+  --paper: #f6f1e7;
+  --ink: #1b1b1b;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+h1, h2 { font-family: var(--serif); line-height: 1.1; margin: 0; }
+
+/* ---------- Hero (red) ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 6vw, 5rem);
+  background: var(--red);
+  color: #fff;
+}
+
+.hero__number {
+  position: absolute;
+  right: -2%;
+  top: -12%;
+  font: 900 clamp(18rem, 45vw, 42rem)/1 var(--serif);
+  color: var(--red-dark);
+  opacity: .55;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero__text, .hero__photo { position: relative; z-index: 1; }
+
+.hero h1 { font-size: clamp(2.8rem, 8vw, 6rem); font-weight: 900; }
+
+.hero__tagline {
+  margin: 1.25rem 0 0;
+  max-width: 24ch;
+  font: italic 500 clamp(1.3rem, 3vw, 1.9rem)/1.3 var(--serif);
+  color: var(--gold);
+}
+
+.hero__photo {
+  margin: 0;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  border: 4px solid var(--gold);
+  border-radius: 6px;
+  background: var(--green);
+  overflow: hidden;
+}
+
+.hero__photo img { width: 100%; height: 100%; max-height: 520px; object-fit: cover; object-position: center top; display: block; }
+.hero__photo figcaption { padding: 1rem; font-size: .95rem; text-align: center; }
+.hero__photo img + figcaption { display: none; }
+
+/* ---------- Biography (paper) ---------- */
+.bio {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) 1.25rem;
+}
+
+.bio h2 { font-size: clamp(2rem, 5vw, 3rem); color: var(--red); margin-bottom: 1.5rem; }
+.bio p { margin: 0 0 1.25rem; }
+
+/* ---------- Timeline (green) ---------- */
+.timeline {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 6vw, 5rem);
+  background: var(--green);
+  color: #fff;
+}
+
+.timeline h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 2rem; }
+
+.timeline__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  padding: 1.25rem 1.5rem;
+  background: var(--green-dark);
+  border-left: 5px solid var(--gold);
+  border-radius: 4px;
+}
+
+.card__year { display: block; font: 700 2.2rem/1 var(--serif); color: var(--gold); margin-bottom: .5rem; }
+.card p { margin: 0; }
+
+/* ---------- Quote (dark) ---------- */
+.quote {
+  padding: clamp(3rem, 8vw, 6rem) 1.25rem;
+  background: var(--red-dark);
+  color: #fff;
+  text-align: center;
+}
+
+.quote blockquote { max-width: 40rem; margin: 0 auto; }
+.quote p { margin: 0 0 1.25rem; font: italic 500 clamp(1.8rem, 5vw, 3rem)/1.2 var(--serif); }
+.quote footer { color: var(--gold); font-size: 1rem; }
+
+/* ---------- Footer ---------- */
+.site-footer {
+  padding: 1.5rem clamp(1.25rem, 6vw, 5rem);
+  background: #111;
+  color: #cfcfcf;
+  font-size: .95rem;
+}
+.site-footer p { margin: .25rem 0; max-width: 60rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 760px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero__number { top: 0; right: -10%; }
+}
