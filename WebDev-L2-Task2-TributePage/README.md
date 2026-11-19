@@ -17,11 +17,11 @@ A responsive tribute page honouring Cristiano Ronaldo's 23-year international ca
 ## Run it
 Open `index.html` in a browser.
 
-## Before you submit
-1. Download a freely licensed photo from Wikimedia Commons and save it as `images/ronaldo.jpg`.
-2. Replace the photo credit line in the footer with the photographer, licence and link.
-3. Re-read the biography and make sure every fact is something you can stand behind.
-4. Add a screenshot.
-
 ## Sources
 Retirement details: CBS News, AP, Gulf News (November 2026). Career facts paraphrased from public sources.
+
+Photo: Bryan Berlin, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), via Wikimedia Commons.
+
+## Screenshot
+
+![Tribute page screenshot](screenshot.png)

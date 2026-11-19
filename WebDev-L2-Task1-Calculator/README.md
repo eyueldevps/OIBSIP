@@ -29,5 +29,6 @@ Open `index.html` in any modern browser.
 ## How it works
 Input is kept as a token list (`[5, '+', 3, '×', 2]`). Pressing `=` evaluates it in two passes: first `×` and `÷`, then `+` and `−`. Dividing by zero is caught in the first pass and surfaced as an error message.
 
-## Screenshots
-Add screenshots here before submitting (e.g. `screenshot.png`).
+## Screenshot
+
+![Calculator screenshot](screenshot.png)

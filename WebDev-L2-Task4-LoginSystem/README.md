@@ -58,5 +58,6 @@ WebDev-L2-Task4-LoginSystem/
 - Set `SESSION_SECRET` (and `NODE_ENV=production` behind HTTPS) when deploying. Without it a random secret is created at each start, so sessions reset when the server restarts.
 - Sessions use the default in-memory store and the user store is a JSON file. That's fine for a learning project. A production app would use a real database and a persistent session store, plus rate limiting on login.
 
-## Screenshots
-Add `screenshot.png` here before submitting.
+## Screenshot
+
+![Login system dashboard screenshot](screenshot.png)

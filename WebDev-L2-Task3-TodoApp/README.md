@@ -31,5 +31,6 @@ Open `index.html` in any modern browser.
 ## How it works
 Tasks live in an array of objects (`id`, `text`, `done`, `createdAt`, `completedAt`). Every change updates the array, saves it to `localStorage`, and re-renders both lists from that array. One click handler per list (event delegation) handles edit, save, cancel and delete.
 
-## Screenshots
-Add `screenshot.png` here before submitting.
+## Screenshot
+
+![To-Do app screenshot](screenshot.png)
