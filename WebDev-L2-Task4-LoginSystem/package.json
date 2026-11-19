@@ -1,0 +1,15 @@
+{
+  "name": "oibsip-login-system",
+  "version": "1.0.0",
+  "description": "Login authentication system with Node.js, Express, sessions and bcrypt hashing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}

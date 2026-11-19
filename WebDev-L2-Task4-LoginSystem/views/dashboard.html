@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Dashboard</h1>
+    <p class="lede">You're logged in. This page is only available with a valid session.</p>
+    <dl class="facts">
+      <dt>Signed in as</dt>
+      <dd id="user-email">Loading...</dd>
+      <dt>Account created</dt>
+      <dd id="user-created">Loading...</dd>
+    </dl>
+    <button id="logout" type="button" class="secondary">Log out</button>
+  </main>
+  <script src="/dashboard.js"></script>
+</body>
+</html>
